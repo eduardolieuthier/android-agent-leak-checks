@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">News Bulletin</string>
+    <string name="home_title">News Bulletin</string>
+    <string name="home_intro">Local stories for this memory study</string>
+    <string name="article_1_title">Community garden opens</string>
+    <string name="article_1_body">Neighbors opened a community garden with shared planting beds and a weekend workshop.</string>
+    <string name="article_2_title">Library adds evening hours</string>
+    <string name="article_2_body">The local library now stays open later on weekdays for reading and study.</string>
+    <string name="article_3_title">Park trail restored</string>
+    <string name="article_3_body">Volunteers restored the park trail and added signs along the walking route.</string>
+    <string name="about_button">About</string>
+    <string name="about_title">About News Bulletin</string>
+    <string name="about_body">News Bulletin is a local demo app with fictional articles. It does not use an account, network, or database.</string>
+    <string name="follow_updates">Follow updates</string>
+    <string name="updates_idle">Updates are off.</string>
+    <string name="updates_active">Following updates for this article.</string>
+</resources>

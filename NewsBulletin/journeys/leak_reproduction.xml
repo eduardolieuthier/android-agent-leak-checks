@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<journey name="News Bulletin listener leak reproduction">
+    <description>On the Pixel_6a emulator, open the first article and follow updates in three explicitly specified passages. Return to the same Home list after each passage.</description>
+    <actions>
+        <action>Verify that News Bulletin Home shows Community garden opens, Library adds evening hours, and Park trail restored.</action>
+
+        <action>Tap Community garden opens on Home for passage one.</action>
+        <action>Verify that the Article screen shows Community garden opens and the Follow updates button.</action>
+        <action>Tap Follow updates on the Article screen for passage one.</action>
+        <action>Verify that the Article screen shows Following updates for this article.</action>
+        <action>Press Back to return to Home from passage one.</action>
+        <action>Verify that Home shows Community garden opens, Library adds evening hours, and Park trail restored after passage one.</action>
+
+        <action>Tap Community garden opens on Home for passage two.</action>
+        <action>Verify that the Article screen shows Community garden opens and the Follow updates button.</action>
+        <action>Tap Follow updates on the Article screen for passage two.</action>
+        <action>Verify that the Article screen shows Following updates for this article.</action>
+        <action>Press Back to return to Home from passage two.</action>
+        <action>Verify that Home shows Community garden opens, Library adds evening hours, and Park trail restored after passage two.</action>
+
+        <action>Tap Community garden opens on Home for passage three.</action>
+        <action>Verify that the Article screen shows Community garden opens and the Follow updates button.</action>
+        <action>Tap Follow updates on the Article screen for passage three.</action>
+        <action>Verify that the Article screen shows Following updates for this article.</action>
+        <action>Press Back to return to Home from passage three.</action>
+        <action>Verify that Home shows Community garden opens, Library adds evening hours, and Park trail restored after passage three.</action>
+
+        <action>Tap About on Home.</action>
+        <action>Verify that the About screen shows About News Bulletin.</action>
+        <action>Press Back to return to Home from About.</action>
+        <action>Verify that Home shows Community garden opens, Library adds evening hours, and Park trail restored.</action>
+    </actions>
+</journey>

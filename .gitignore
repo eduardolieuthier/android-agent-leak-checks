@@ -1,0 +1,11 @@
+**/.gradle/
+**/build/
+**/local.properties
+**/.cxx/
+**/.externalNativeBuild/
+**/private-raw/
+*.hprof
+*.jks
+*.keystore
+.idea/
+*.iml

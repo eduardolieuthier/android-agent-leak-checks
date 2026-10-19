@@ -1,0 +1,19 @@
+diff --git a/NewsBulletin/app/src/main/java/com/example/newsbulletin/ArticleActivity.kt b/NewsBulletin/app/src/main/java/com/example/newsbulletin/ArticleActivity.kt
+index 4a3db36..e0f3f17 100644
+--- a/NewsBulletin/app/src/main/java/com/example/newsbulletin/ArticleActivity.kt
++++ b/NewsBulletin/app/src/main/java/com/example/newsbulletin/ArticleActivity.kt
+@@ -40,10 +40,11 @@ class ArticleActivity : Activity() {
+     }
+
+     override fun onDestroy() {
+-        if (articleUpdateListener != null) {
+-            // DEMO ONLY: Keep the listener in the application registry after this Activity is destroyed.
+-            Log.d("LeakStudy", "screen=ArticleActivity event=listenerIntentionallyRetained listenerCount=${updateRegistry.listenerCount()}")
++        articleUpdateListener?.let { listener ->
++            updateRegistry.unregister(listener)
++            Log.d("LeakStudy", "screen=ArticleActivity event=listenerUnregistered listenerCount=${updateRegistry.listenerCount()}")
+         }
++        articleUpdateListener = null
+         Log.d("LeakStudy", "screen=ArticleActivity event=onDestroy listenerCount=${updateRegistry.listenerCount()}")
+         super.onDestroy()
+     }

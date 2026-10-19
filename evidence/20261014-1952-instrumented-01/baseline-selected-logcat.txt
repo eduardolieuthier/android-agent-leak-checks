@@ -1,0 +1,187 @@
+10-14 22:58:47.808 21913 21932 I TestRunner: started: threeFollowPassagesAndAboutReturnDoNotRetainDestroyedActivities(com.example.newsbulletin.LeakReproductionInstrumentationTest)
+10-14 22:58:47.967 21913 21913 D LeakStudy: screen=HomeActivity event=onCreate
+10-14 22:58:48.007 21913 21913 D LeakStudy: screen=HomeActivity event=onResume
+10-14 22:58:48.867 21913 21913 D LeakStudy: screen=HomeActivity event=openArticle articleIndex=0
+10-14 22:58:48.915 21913 21913 D LeakStudy: screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=0
+10-14 22:58:49.447 21913 21913 D LeakStudy: screen=ArticleActivity event=followClick articleIndex=0
+10-14 22:58:49.447 21913 21913 D LeakStudy: screen=ArticleActivity event=listenerRegistered listenerCount=1
+10-14 22:58:49.448 21913 21913 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 22:58:49.771 21913 21913 D LeakStudy: screen=HomeActivity event=onResume
+10-14 22:58:50.416 21913 21913 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key 413a48fe-cc76-4487-add3-24c6ae331087
+10-14 22:58:50.417 21913 21913 D LeakStudy: screen=ArticleActivity event=listenerIntentionallyRetained listenerCount=1
+10-14 22:58:50.417 21913 21913 D LeakStudy: screen=ArticleActivity event=onDestroy listenerCount=1
+10-14 22:58:50.418 21913 21913 D LeakCanary: Watching instance of com.example.newsbulletin.ArticleActivity (com.example.newsbulletin.ArticleActivity received Activity#onDestroy() callback) with key 8582744d-29fb-4441-a195-db0cc4d073c7
+10-14 22:58:50.492 21913 21913 D LeakStudy: screen=HomeActivity event=openArticle articleIndex=0
+10-14 22:58:50.527 21913 21913 D LeakStudy: screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=1
+10-14 22:58:51.011 21913 21913 D LeakStudy: screen=ArticleActivity event=followClick articleIndex=0
+10-14 22:58:51.012 21913 21913 D LeakStudy: screen=ArticleActivity event=listenerRegistered listenerCount=2
+10-14 22:58:51.012 21913 21913 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 22:58:51.012 21913 21913 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 22:58:51.282 21913 21913 D LeakStudy: screen=HomeActivity event=onResume
+10-14 22:58:51.861 21913 21913 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key aae9fb42-02b2-4e5a-aa17-7649562f53ac
+10-14 22:58:51.862 21913 21913 D LeakStudy: screen=ArticleActivity event=listenerIntentionallyRetained listenerCount=2
+10-14 22:58:51.862 21913 21913 D LeakStudy: screen=ArticleActivity event=onDestroy listenerCount=2
+10-14 22:58:51.862 21913 21913 D LeakCanary: Watching instance of com.example.newsbulletin.ArticleActivity (com.example.newsbulletin.ArticleActivity received Activity#onDestroy() callback) with key 5c06a8dd-fbf8-410b-8262-0de29faae72a
+10-14 22:58:51.933 21913 21913 D LeakStudy: screen=HomeActivity event=openArticle articleIndex=0
+10-14 22:58:51.963 21913 21913 D LeakStudy: screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=2
+10-14 22:58:52.379 21913 21913 D LeakStudy: screen=ArticleActivity event=followClick articleIndex=0
+10-14 22:58:52.379 21913 21913 D LeakStudy: screen=ArticleActivity event=listenerRegistered listenerCount=3
+10-14 22:58:52.379 21913 21913 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 22:58:52.380 21913 21913 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 22:58:52.381 21913 21913 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 22:58:52.666 21913 21913 D LeakStudy: screen=HomeActivity event=onResume
+10-14 22:58:53.264 21913 21913 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key 692332f4-aff5-4085-b72c-87bd3b7d9bd9
+10-14 22:58:53.264 21913 21913 D LeakStudy: screen=ArticleActivity event=listenerIntentionallyRetained listenerCount=3
+10-14 22:58:53.264 21913 21913 D LeakStudy: screen=ArticleActivity event=onDestroy listenerCount=3
+10-14 22:58:53.265 21913 21913 D LeakCanary: Watching instance of com.example.newsbulletin.ArticleActivity (com.example.newsbulletin.ArticleActivity received Activity#onDestroy() callback) with key cbe9668d-eecf-4150-8ab6-cf5e4c06cdd7
+10-14 22:58:53.341 21913 21913 D LeakStudy: screen=HomeActivity event=openAbout
+10-14 22:58:53.379 21913 21913 D LeakStudy: screen=AboutActivity event=onCreate
+10-14 22:58:53.757 21913 21913 D LeakStudy: screen=HomeActivity event=onResume
+10-14 22:58:54.296 21913 21913 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key b53340c7-cbf4-4263-ba84-25937a8fd80b
+10-14 22:58:54.296 21913 21913 D LeakStudy: screen=AboutActivity event=onDestroy
+10-14 22:58:54.296 21913 21913 D LeakCanary: Watching instance of com.example.newsbulletin.AboutActivity (com.example.newsbulletin.AboutActivity received Activity#onDestroy() callback) with key 47b8aede-318b-400b-9266-3fab4718834e
+10-14 22:58:55.419 21913 21930 D LeakCanary: LeakCanary is currently disabled: test class org.junit.Test was found in classpath.
+10-14 22:58:56.863 21913 21930 D LeakCanary: LeakCanary is currently disabled: test class org.junit.Test was found in classpath.
+10-14 22:58:58.266 21913 21930 D LeakCanary: LeakCanary is currently disabled: test class org.junit.Test was found in classpath.
+10-14 22:59:07.072 21913 21932 D LeakCanary: working on Extracting metadata
+10-14 22:59:09.016 21913 21932 D LeakCanary: Extracting metadata took 1944 ms, now working on Finding retained objects
+10-14 22:59:09.019 21913 21932 D LeakCanary: Finding retained objects took 3 ms, now working on Finding paths to retained objects
+10-14 22:59:15.698 21913 21932 D LeakCanary: Finding paths to retained objects took 6678 ms, now working on Finding dominators
+10-14 22:59:17.007 21913 21932 D LeakCanary: Found 6 paths to retained objects, down to 3 after removing duplicated paths
+10-14 22:59:17.009 21913 21932 D LeakCanary: Finding dominators took 1311 ms, now working on Inspecting objects
+10-14 22:59:17.020 21913 21932 D LeakCanary: Inspecting objects took 12 ms, now working on Computing native retained size
+10-14 22:59:17.020 21913 21932 D LeakCanary: Computing native retained size took 0 ms, now working on Computing retained size
+10-14 22:59:17.221 21913 21932 D LeakCanary: Computing retained size took 201 ms, now working on Building leak traces
+10-14 22:59:17.250 21913 21932 D LeakCanary: Spent 22856 ms detecting leaks on , VM total so far: 22856 ms
+10-14 22:59:17.908 21913 21913 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key e4f89fc8-ed58-430f-88b6-a6299f01fc7c
+10-14 22:59:17.910 21913 21913 D LeakStudy: screen=HomeActivity event=onDestroy
+10-14 22:59:17.910 21913 21913 D LeakCanary: Watching instance of com.example.newsbulletin.HomeActivity (com.example.newsbulletin.HomeActivity received Activity#onDestroy() callback) with key 79b4db39-68ff-4e28-83bc-5ee7c6af557a
+10-14 22:59:17.915 21913 21932 E TestRunner: failed: threeFollowPassagesAndAboutReturnDoNotRetainDestroyedActivities(com.example.newsbulletin.LeakReproductionInstrumentationTest)
+10-14 22:59:17.915 21913 21932 E TestRunner: ----- begin exception -----
+10-14 22:59:17.915 21913 21932 E TestRunner: leakcanary.NoLeakAssertionFailedError: Application memory leaks were detected:
+10-14 22:59:17.915 21913 21932 E TestRunner: ====================================
+10-14 22:59:17.915 21913 21932 E TestRunner: HEAP ANALYSIS RESULT
+10-14 22:59:17.915 21913 21932 E TestRunner: ====================================
+10-14 22:59:17.915 21913 21932 E TestRunner: 1 APPLICATION LEAKS
+10-14 22:59:17.915 21913 21932 E TestRunner:
+10-14 22:59:17.915 21913 21932 E TestRunner: References underlined with "~~~" are likely causes.
+10-14 22:59:17.915 21913 21932 E TestRunner: Learn more at https://squ.re/leaks.
+10-14 22:59:17.915 21913 21932 E TestRunner:
+10-14 22:59:17.915 21913 21932 E TestRunner: 595980 bytes retained by leaking objects
+10-14 22:59:17.915 21913 21932 E TestRunner: Displaying only 1 leak trace out of 3 with the same signature
+10-14 22:59:17.915 21913 21932 E TestRunner: Signature: 3ca80115daff2e953aeb1e93a830c87f284fcb3a
+10-14 22:59:17.915 21913 21932 E TestRunner: ┬───
+10-14 22:59:17.915 21913 21932 E TestRunner: │ GC Root: System class
+10-14 22:59:17.915 21913 21932 E TestRunner: │
+10-14 22:59:17.915 21913 21932 E TestRunner: ├─ android.provider.FontsContract class
+10-14 22:59:17.915 21913 21932 E TestRunner: │    Leaking: NO (NewsBulletinApplication↓ is not leaking and a class is never leaking)
+10-14 22:59:17.915 21913 21932 E TestRunner: │    ↓ static FontsContract.sContext
+10-14 22:59:17.915 21913 21932 E TestRunner: ├─ com.example.newsbulletin.NewsBulletinApplication instance
+10-14 22:59:17.915 21913 21932 E TestRunner: │    Leaking: NO (Application is a singleton)
+10-14 22:59:17.915 21913 21932 E TestRunner: │    mBase instance of android.app.ContextImpl
+10-14 22:59:17.915 21913 21932 E TestRunner: │    ↓ NewsBulletinApplication.updateRegistry
+10-14 22:59:17.915 21913 21932 E TestRunner: │                              ~~~~~~~~~~~~~~
+10-14 22:59:17.915 21913 21932 E TestRunner: ├─ com.example.newsbulletin.UpdateRegistry instance
+10-14 22:59:17.915 21913 21932 E TestRunner: │    Leaking: UNKNOWN
+10-14 22:59:17.915 21913 21932 E TestRunner: │    Retaining 596.3 kB in 3515 objects
+10-14 22:59:17.915 21913 21932 E TestRunner: │    ↓ UpdateRegistry.listeners
+10-14 22:59:17.915 21913 21932 E TestRunner: │                     ~~~~~~~~~
+10-14 22:59:17.915 21913 21932 E TestRunner: ├─ java.util.LinkedHashSet instance
+10-14 22:59:17.915 21913 21932 E TestRunner: │    Leaking: UNKNOWN
+10-14 22:59:17.915 21913 21932 E TestRunner: │    Retaining 596.3 kB in 3514 objects
+10-14 22:59:17.915 21913 21932 E TestRunner: │    ↓ LinkedHashSet[element()]
+10-14 22:59:17.915 21913 21932 E TestRunner: │                   ~~~~~~~~~~~
+10-14 22:59:17.915 21913 21932 E TestRunner: ├─ com.example.newsbulletin.ArticleActivity$onCreate$1$listener$1 instance
+10-14 22:59:17.915 21913 21932 E TestRunner: │    Leaking: UNKNOWN
+10-14 22:59:17.915 21913 21932 E TestRunner: │    Retaining 198.7 kB in 1169 objects
+10-14 22:59:17.915 21913 21932 E TestRunner: │    Anonymous class implementing com.example.newsbulletin.ArticleUpdateListener
+10-14 22:59:17.915 21913 21932 E TestRunner: │    this$0 instance of com.example.newsbulletin.ArticleActivity with mDestroyed = true
+10-14 22:59:17.915 21913 21932 E TestRunner: │    ↓ ArticleActivity$onCreate$1$listener$1.this$0
+10-14 22:59:17.915 21913 21932 E TestRunner: │                                            ~~~~~~
+10-14 22:59:17.915 21913 21932 E TestRunner: ╰→ com.example.newsbulletin.ArticleActivity instance
+10-14 22:59:17.915 21913 21932 E TestRunner: ​     Leaking: YES (ObjectWatcher was watching this because com.example.newsbulletin.ArticleActivity received Activity#onDestroy() callback and Activity#mDestroyed is true)
+10-14 22:59:17.915 21913 21932 E TestRunner: ​     Retaining 198.7 kB in 1168 objects
+10-14 22:59:17.915 21913 21932 E TestRunner: ​     key = 8582744d-29fb-4441-a195-db0cc4d073c7
+10-14 22:59:17.915 21913 21932 E TestRunner: ​     watchDurationMillis = 9096
+10-14 22:59:17.915 21913 21932 E TestRunner: ​     retainedDurationMillis = 4095
+10-14 22:59:17.915 21913 21932 E TestRunner: ​     mApplication instance of com.example.newsbulletin.NewsBulletinApplication
+10-14 22:59:17.915 21913 21932 E TestRunner: ​     mBase instance of android.app.ContextImpl
+10-14 22:59:17.915 21913 21932 E TestRunner: ====================================
+10-14 22:59:17.915 21913 21932 E TestRunner: 0 LIBRARY LEAKS
+10-14 22:59:17.915 21913 21932 E TestRunner:
+10-14 22:59:17.915 21913 21932 E TestRunner: A Library Leak is a leak caused by a known bug in 3rd party code that you do not have control over.
+10-14 22:59:17.915 21913 21932 E TestRunner: See https://square.github.io/leakcanary/fundamentals-how-leakcanary-works/#4-categorizing-leaks
+10-14 22:59:17.915 21913 21932 E TestRunner: ====================================
+10-14 22:59:17.915 21913 21932 E TestRunner: 0 UNREACHABLE OBJECTS
+10-14 22:59:17.915 21913 21932 E TestRunner:
+10-14 22:59:17.915 21913 21932 E TestRunner: An unreachable object is still in memory but LeakCanary could not find a strong reference path
+10-14 22:59:17.915 21913 21932 E TestRunner: from GC roots.
+10-14 22:59:17.915 21913 21932 E TestRunner: ====================================
+10-14 22:59:17.915 21913 21932 E TestRunner: METADATA
+10-14 22:59:17.915 21913 21932 E TestRunner:
+10-14 22:59:17.915 21913 21932 E TestRunner: Please include this in bug reports and Stack Overflow questions.
+10-14 22:59:17.915 21913 21932 E TestRunner:
+10-14 22:59:17.915 21913 21932 E TestRunner: Build.VERSION.SDK_INT: 36
+10-14 22:59:17.915 21913 21932 E TestRunner: Build.MANUFACTURER: Google
+10-14 22:59:17.915 21913 21932 E TestRunner: LeakCanary version: 2.14
+10-14 22:59:17.915 21913 21932 E TestRunner: App process name: com.example.newsbulletin
+10-14 22:59:17.915 21913 21932 E TestRunner: Class count: 33318
+10-14 22:59:17.915 21913 21932 E TestRunner: Instance count: 232708
+10-14 22:59:17.915 21913 21932 E TestRunner: Primitive array count: 174683
+10-14 22:59:17.915 21913 21932 E TestRunner: Object array count: 34402
+10-14 22:59:17.915 21913 21932 E TestRunner: Thread count: 23
+10-14 22:59:17.915 21913 21932 E TestRunner: Heap total bytes: 29730845
+10-14 22:59:17.915 21913 21932 E TestRunner: Bitmap count: 5
+10-14 22:59:17.915 21913 21932 E TestRunner: Bitmap total bytes: 601520
+10-14 22:59:17.915 21913 21932 E TestRunner: Large bitmap count: 0
+10-14 22:59:17.915 21913 21932 E TestRunner: Large bitmap total bytes: 0
+10-14 22:59:17.915 21913 21932 E TestRunner: Stats: LruCache[maxSize=3000,hits=120511,misses=216421,hitRate=35%] RandomAccess[bytes=10626975,reads=216421,travel=80590503458,range=37276105,size=46638628]
+10-14 22:59:17.915 21913 21932 E TestRunner: assertionTag:
+10-14 22:59:17.915 21913 21932 E TestRunner: waitForRetainedDurationMillis: 5117
+10-14 22:59:17.915 21913 21932 E TestRunner: totalDurationMillis: 22848
+10-14 22:59:17.915 21913 21932 E TestRunner: Analysis duration: 10946 ms
+10-14 22:59:17.915 21913 21932 E TestRunner: Heap dump file path: /data/user/0/com.example.newsbulletin/files/instrumentation_tests_2026-10-14_22-58-59_512.hprof
+10-14 22:59:17.915 21913 21932 E TestRunner: Heap dump timestamp: 1792018757232
+10-14 22:59:17.915 21913 21932 E TestRunner: Heap dump duration: 1757 ms
+10-14 22:59:17.915 21913 21932 E TestRunner: ====================================
+10-14 22:59:17.915 21913 21932 E TestRunner: 	at leakcanary.NoLeakAssertionFailedError$Companion$throwOnApplicationLeaks$1.reportHeapAnalysis(NoLeakAssertionFailedError.kt:25)
+10-14 22:59:17.915 21913 21932 E TestRunner: 	at leakcanary.AndroidDetectLeaksAssert.runLeakChecks(AndroidDetectLeaksAssert.kt:95)
+10-14 22:59:17.915 21913 21932 E TestRunner: 	at leakcanary.AndroidDetectLeaksAssert.assertNoLeaks(AndroidDetectLeaksAssert.kt:34)
+10-14 22:59:17.915 21913 21932 E TestRunner: 	at leakcanary.LeakAssertions.assertNoLeaks(LeakAssertions.kt:21)
+10-14 22:59:17.915 21913 21932 E TestRunner: 	at leakcanary.LeakAssertions.assertNoLeaks$default(LeakAssertions.kt:20)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at com.example.newsbulletin.LeakReproductionInstrumentationTest.threeFollowPassagesAndAboutReturnDoNotRetainDestroyedActivities(LeakReproductionInstrumentationTest.kt:62)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:467)
+10-14 22:59:17.924 21913 21932 E TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2627)
+10-14 22:59:17.925 21913 21932 E TestRunner: ----- end exception -----
+10-14 22:59:17.932 21913 21932 I TestRunner: finished: threeFollowPassagesAndAboutReturnDoNotRetainDestroyedActivities(com.example.newsbulletin.LeakReproductionInstrumentationTest)

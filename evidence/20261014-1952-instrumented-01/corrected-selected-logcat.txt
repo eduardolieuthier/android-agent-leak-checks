@@ -1,0 +1,45 @@
+10-14 23:01:08.093 22345 22366 I TestRunner: started: threeFollowPassagesAndAboutReturnDoNotRetainDestroyedActivities(com.example.newsbulletin.LeakReproductionInstrumentationTest)
+10-14 23:01:08.241 22345 22345 D LeakStudy: screen=HomeActivity event=onCreate
+10-14 23:01:08.278 22345 22345 D LeakStudy: screen=HomeActivity event=onResume
+10-14 23:01:09.230 22345 22345 D LeakStudy: screen=HomeActivity event=openArticle articleIndex=0
+10-14 23:01:09.297 22345 22345 D LeakStudy: screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=0
+10-14 23:01:09.759 22345 22345 D LeakStudy: screen=ArticleActivity event=followClick articleIndex=0
+10-14 23:01:09.760 22345 22345 D LeakStudy: screen=ArticleActivity event=listenerRegistered listenerCount=1
+10-14 23:01:09.760 22345 22345 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 23:01:10.091 22345 22345 D LeakStudy: screen=HomeActivity event=onResume
+10-14 23:01:10.715 22345 22345 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key 12abe032-4b6f-4df0-8419-792f01df5352
+10-14 23:01:10.717 22345 22345 D LeakStudy: screen=ArticleActivity event=listenerUnregistered listenerCount=0
+10-14 23:01:10.717 22345 22345 D LeakStudy: screen=ArticleActivity event=onDestroy listenerCount=0
+10-14 23:01:10.717 22345 22345 D LeakCanary: Watching instance of com.example.newsbulletin.ArticleActivity (com.example.newsbulletin.ArticleActivity received Activity#onDestroy() callback) with key 02850281-2626-48e4-ad18-1fa12f8c0997
+10-14 23:01:10.883 22345 22345 D LeakStudy: screen=HomeActivity event=openArticle articleIndex=0
+10-14 23:01:10.915 22345 22345 D LeakStudy: screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=0
+10-14 23:01:11.376 22345 22345 D LeakStudy: screen=ArticleActivity event=followClick articleIndex=0
+10-14 23:01:11.376 22345 22345 D LeakStudy: screen=ArticleActivity event=listenerRegistered listenerCount=1
+10-14 23:01:11.376 22345 22345 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 23:01:11.654 22345 22345 D LeakStudy: screen=HomeActivity event=onResume
+10-14 23:01:12.255 22345 22345 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key 70ebb0a1-11e1-462d-8f8f-23176b0e3c83
+10-14 23:01:12.256 22345 22345 D LeakStudy: screen=ArticleActivity event=listenerUnregistered listenerCount=0
+10-14 23:01:12.256 22345 22345 D LeakStudy: screen=ArticleActivity event=onDestroy listenerCount=0
+10-14 23:01:12.256 22345 22345 D LeakCanary: Watching instance of com.example.newsbulletin.ArticleActivity (com.example.newsbulletin.ArticleActivity received Activity#onDestroy() callback) with key cbce1730-6ad3-4b95-a95a-08ab5070fa8e
+10-14 23:01:12.351 22345 22345 D LeakStudy: screen=HomeActivity event=openArticle articleIndex=0
+10-14 23:01:12.393 22345 22345 D LeakStudy: screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=0
+10-14 23:01:12.913 22345 22345 D LeakStudy: screen=ArticleActivity event=followClick articleIndex=0
+10-14 23:01:12.913 22345 22345 D LeakStudy: screen=ArticleActivity event=listenerRegistered listenerCount=1
+10-14 23:01:12.913 22345 22345 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 23:01:13.276 22345 22345 D LeakStudy: screen=HomeActivity event=onResume
+10-14 23:01:13.902 22345 22345 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key 2d562c2e-a849-4949-a9f4-32bd3b6f6380
+10-14 23:01:13.903 22345 22345 D LeakStudy: screen=ArticleActivity event=listenerUnregistered listenerCount=0
+10-14 23:01:13.904 22345 22345 D LeakStudy: screen=ArticleActivity event=onDestroy listenerCount=0
+10-14 23:01:13.904 22345 22345 D LeakCanary: Watching instance of com.example.newsbulletin.ArticleActivity (com.example.newsbulletin.ArticleActivity received Activity#onDestroy() callback) with key 30af4ccd-74f1-4427-b36a-1ffa97ee4231
+10-14 23:01:13.978 22345 22345 D LeakStudy: screen=HomeActivity event=openAbout
+10-14 23:01:14.013 22345 22345 D LeakStudy: screen=AboutActivity event=onCreate
+10-14 23:01:14.401 22345 22345 D LeakStudy: screen=HomeActivity event=onResume
+10-14 23:01:14.913 22345 22345 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key fd9de890-5794-4ac3-bb6a-c24fe3d9acc4
+10-14 23:01:14.914 22345 22345 D LeakStudy: screen=AboutActivity event=onDestroy
+10-14 23:01:14.916 22345 22345 D LeakCanary: Watching instance of com.example.newsbulletin.AboutActivity (com.example.newsbulletin.AboutActivity received Activity#onDestroy() callback) with key c67c45f3-125e-4ed0-b11d-4c79e3a8e6b1
+10-14 23:01:15.141 22345 22366 D LeakCanary: Test can keep going: no heap dump performed (No watched objects after triggering an explicit GC.)
+10-14 23:01:15.141 22345 22366 D LeakCanary: Spent 121 ms detecting leaks on , VM total so far: 121 ms
+10-14 23:01:15.905 22345 22345 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key eed2f3b2-54c8-441e-8d18-3d213d162925
+10-14 23:01:15.905 22345 22345 D LeakStudy: screen=HomeActivity event=onDestroy
+10-14 23:01:15.905 22345 22345 D LeakCanary: Watching instance of com.example.newsbulletin.HomeActivity (com.example.newsbulletin.HomeActivity received Activity#onDestroy() callback) with key 074d2124-5594-478a-8a30-5caf3f7ad14c
+10-14 23:01:15.908 22345 22366 I TestRunner: finished: threeFollowPassagesAndAboutReturnDoNotRetainDestroyedActivities(com.example.newsbulletin.LeakReproductionInstrumentationTest)

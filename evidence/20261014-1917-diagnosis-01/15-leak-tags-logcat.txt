@@ -1,0 +1,143 @@
+10-14 22:18:36.958 20149 20149 D LeakStudy: screen=HomeActivity event=onCreate
+10-14 22:18:36.974 20149 20149 D LeakStudy: screen=HomeActivity event=onResume
+10-14 22:18:37.084 20149 20204 D LeakCanary: LeakCanary is running and ready to detect memory leaks.
+10-14 22:19:46.775 20149 20149 D LeakStudy: screen=HomeActivity event=openArticle articleIndex=0
+10-14 22:19:46.838 20149 20149 D LeakStudy: screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=0
+10-14 22:21:04.425 20149 20149 D LeakStudy: screen=ArticleActivity event=followClick articleIndex=0
+10-14 22:21:04.425 20149 20149 D LeakStudy: screen=ArticleActivity event=listenerRegistered listenerCount=1
+10-14 22:21:04.426 20149 20149 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 22:22:51.668 20149 20149 D LeakStudy: screen=HomeActivity event=onResume
+10-14 22:22:52.263 20149 20149 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key 55921291-aa81-4a8f-b003-9cc00d8bf64f
+10-14 22:22:52.263 20149 20149 D LeakStudy: screen=ArticleActivity event=listenerIntentionallyRetained listenerCount=1
+10-14 22:22:52.263 20149 20149 D LeakStudy: screen=ArticleActivity event=onDestroy listenerCount=1
+10-14 22:22:52.264 20149 20149 D LeakCanary: Watching instance of com.example.newsbulletin.ArticleActivity (com.example.newsbulletin.ArticleActivity received Activity#onDestroy() callback) with key ec9a9a3c-0e4f-41e6-885f-47b3626f7221
+10-14 22:22:57.382 20149 20204 D LeakCanary: Found 2 objects retained, not dumping heap yet (app is visible & < 5 threshold)
+10-14 22:23:14.289 20149 20149 D LeakStudy: screen=HomeActivity event=openArticle articleIndex=0
+10-14 22:23:14.327 20149 20149 D LeakStudy: screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=1
+10-14 22:23:56.743 20149 20149 D LeakStudy: screen=ArticleActivity event=followClick articleIndex=0
+10-14 22:23:56.743 20149 20149 D LeakStudy: screen=ArticleActivity event=listenerRegistered listenerCount=2
+10-14 22:23:56.744 20149 20149 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 22:23:56.744 20149 20149 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 22:24:05.679 20149 20149 D LeakStudy: screen=HomeActivity event=onResume
+10-14 22:24:06.325 20149 20149 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key 58f22893-2a2f-4cbb-a9cd-e7ab9fd7bcdf
+10-14 22:24:06.325 20149 20149 D LeakStudy: screen=ArticleActivity event=listenerIntentionallyRetained listenerCount=2
+10-14 22:24:06.325 20149 20149 D LeakStudy: screen=ArticleActivity event=onDestroy listenerCount=2
+10-14 22:24:06.325 20149 20149 D LeakCanary: Watching instance of com.example.newsbulletin.ArticleActivity (com.example.newsbulletin.ArticleActivity received Activity#onDestroy() callback) with key db2edfae-6966-437b-9efe-e9a84898f8d9
+10-14 22:24:11.637 20149 20204 D LeakCanary: Found 4 objects retained, not dumping heap yet (app is visible & < 5 threshold)
+10-14 22:24:21.722 20149 20149 D LeakStudy: screen=HomeActivity event=openArticle articleIndex=0
+10-14 22:24:21.760 20149 20149 D LeakStudy: screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=2
+10-14 22:24:31.224 20149 20149 D LeakStudy: screen=ArticleActivity event=followClick articleIndex=0
+10-14 22:24:31.224 20149 20149 D LeakStudy: screen=ArticleActivity event=listenerRegistered listenerCount=3
+10-14 22:24:31.225 20149 20149 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 22:24:31.225 20149 20149 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 22:24:31.225 20149 20149 D LeakStudy: screen=ArticleActivity event=updateDelivered articleIndex=0
+10-14 22:24:38.312 20149 20149 D LeakStudy: screen=HomeActivity event=onResume
+10-14 22:24:38.928 20149 20149 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key 64e344e7-85d9-4718-97f0-ed727c9ef46a
+10-14 22:24:38.928 20149 20149 D LeakStudy: screen=ArticleActivity event=listenerIntentionallyRetained listenerCount=3
+10-14 22:24:38.928 20149 20149 D LeakStudy: screen=ArticleActivity event=onDestroy listenerCount=3
+10-14 22:24:38.928 20149 20149 D LeakCanary: Watching instance of com.example.newsbulletin.ArticleActivity (com.example.newsbulletin.ArticleActivity received Activity#onDestroy() callback) with key 3d5dd290-1e75-4009-8c9e-e2207d59291b
+10-14 22:24:45.579 20149 20204 D LeakCanary: Found 6 objects retained, dumping heap now (app is visible & >=5 threshold)
+10-14 22:24:48.516 20149 20149 D LeakCanary: Watching instance of android.widget.FrameLayout (android.widget.FrameLayout received View#onDetachedFromWindow() callback) with key b8547611-ecc2-4a25-af9c-ef289e3c62a2
+10-14 22:24:48.525 20149 20526 D LeakCanary: Analysis in progress, 0% done, working on Parsing heap dump
+10-14 22:24:51.250 20149 20526 D LeakCanary: Analysis in progress, 10% done, working on Extracting metadata
+10-14 22:24:51.425 20149 20149 D LeakStudy: screen=HomeActivity event=openAbout
+10-14 22:24:51.461 20149 20149 D LeakStudy: screen=AboutActivity event=onCreate
+10-14 22:24:53.274 20149 20526 D LeakCanary: Analysis in progress, 20% done, working on Finding retained objects
+10-14 22:24:53.289 20149 20526 D LeakCanary: Analysis in progress, 30% done, working on Finding paths to retained objects
+10-14 22:25:00.421 20149 20526 D LeakCanary: Analysis in progress, 40% done, working on Finding dominators
+10-14 22:25:01.209 20149 20149 D LeakStudy: screen=HomeActivity event=onResume
+10-14 22:25:01.852 20149 20149 D LeakCanary: Watching instance of androidx.lifecycle.ReportFragment (androidx.lifecycle.ReportFragment received Fragment#onDestroy() callback) with key d24ef2df-90cf-407d-a713-7d866c51a03b
+10-14 22:25:01.852 20149 20149 D LeakStudy: screen=AboutActivity event=onDestroy
+10-14 22:25:01.852 20149 20149 D LeakCanary: Watching instance of com.example.newsbulletin.AboutActivity (com.example.newsbulletin.AboutActivity received Activity#onDestroy() callback) with key e73b03be-d935-4197-aa41-7d911a1e4bd1
+10-14 22:25:01.919 20149 20526 D LeakCanary: Found 6 paths to retained objects, down to 3 after removing duplicated paths
+10-14 22:25:01.919 20149 20526 D LeakCanary: Analysis in progress, 50% done, working on Inspecting objects
+10-14 22:25:01.933 20149 20526 D LeakCanary: Analysis in progress, 60% done, working on Computing native retained size
+10-14 22:25:01.935 20149 20526 D LeakCanary: Analysis in progress, 70% done, working on Computing retained size
+10-14 22:25:02.162 20149 20526 D LeakCanary: Analysis in progress, 80% done, working on Building leak traces
+10-14 22:25:02.176 20149 20526 D LeakCanary: Analysis in progress, 90% done, working on Reporting heap analysis
+10-14 22:25:02.238 20149 20526 D LeakCanary: ​
+10-14 22:25:02.238 20149 20526 D LeakCanary: ====================================
+10-14 22:25:02.238 20149 20526 D LeakCanary: HEAP ANALYSIS RESULT
+10-14 22:25:02.238 20149 20526 D LeakCanary: ====================================
+10-14 22:25:02.238 20149 20526 D LeakCanary: 1 APPLICATION LEAKS
+10-14 22:25:02.238 20149 20526 D LeakCanary:
+10-14 22:25:02.238 20149 20526 D LeakCanary: References underlined with "~~~" are likely causes.
+10-14 22:25:02.238 20149 20526 D LeakCanary: Learn more at https://squ.re/leaks.
+10-14 22:25:02.238 20149 20526 D LeakCanary:
+10-14 22:25:02.238 20149 20526 D LeakCanary: 595931 bytes retained by leaking objects
+10-14 22:25:02.238 20149 20526 D LeakCanary: Displaying only 1 leak trace out of 3 with the same signature
+10-14 22:25:02.238 20149 20526 D LeakCanary: Signature: 3ca80115daff2e953aeb1e93a830c87f284fcb3a
+10-14 22:25:02.238 20149 20526 D LeakCanary: ┬───
+10-14 22:25:02.238 20149 20526 D LeakCanary: │ GC Root: System class
+10-14 22:25:02.238 20149 20526 D LeakCanary: │
+10-14 22:25:02.238 20149 20526 D LeakCanary: ├─ android.provider.FontsContract class
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    Leaking: NO (NewsBulletinApplication↓ is not leaking and a class is never leaking)
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    ↓ static FontsContract.sContext
+10-14 22:25:02.238 20149 20526 D LeakCanary: ├─ com.example.newsbulletin.NewsBulletinApplication instance
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    Leaking: NO (Application is a singleton)
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    mBase instance of android.app.ContextImpl
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    ↓ NewsBulletinApplication.updateRegistry
+10-14 22:25:02.238 20149 20526 D LeakCanary: │                              ~~~~~~~~~~~~~~
+10-14 22:25:02.238 20149 20526 D LeakCanary: ├─ com.example.newsbulletin.UpdateRegistry instance
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    Leaking: UNKNOWN
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    Retaining 596.2 kB in 3493 objects
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    ↓ UpdateRegistry.listeners
+10-14 22:25:02.238 20149 20526 D LeakCanary: │                     ~~~~~~~~~
+10-14 22:25:02.238 20149 20526 D LeakCanary: ├─ java.util.LinkedHashSet instance
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    Leaking: UNKNOWN
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    Retaining 596.2 kB in 3492 objects
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    ↓ LinkedHashSet[element()]
+10-14 22:25:02.238 20149 20526 D LeakCanary: │                   ~~~~~~~~~~~
+10-14 22:25:02.238 20149 20526 D LeakCanary: ├─ com.example.newsbulletin.ArticleActivity$onCreate$1$listener$1 instance
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    Leaking: UNKNOWN
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    Retaining 199.2 kB in 1177 objects
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    Anonymous class implementing com.example.newsbulletin.ArticleUpdateListener
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    this$0 instance of com.example.newsbulletin.ArticleActivity with mDestroyed = true
+10-14 22:25:02.238 20149 20526 D LeakCanary: │    ↓ ArticleActivity$onCreate$1$listener$1.this$0
+10-14 22:25:02.238 20149 20526 D LeakCanary: │                                            ~~~~~~
+10-14 22:25:02.238 20149 20526 D LeakCanary: ╰→ com.example.newsbulletin.ArticleActivity instance
+10-14 22:25:02.238 20149 20526 D LeakCanary: ​     Leaking: YES (ObjectWatcher was watching this because com.example.newsbulletin.ArticleActivity received
+10-14 22:25:02.238 20149 20526 D LeakCanary: ​     Activity#onDestroy() callback and Activity#mDestroyed is true)
+10-14 22:25:02.238 20149 20526 D LeakCanary: ​     Retaining 199.2 kB in 1176 objects
+10-14 22:25:02.238 20149 20526 D LeakCanary: ​     key = db2edfae-6966-437b-9efe-e9a84898f8d9
+10-14 22:25:02.238 20149 20526 D LeakCanary: ​     watchDurationMillis = 39667
+10-14 22:25:02.238 20149 20526 D LeakCanary: ​     retainedDurationMillis = 34663
+10-14 22:25:02.238 20149 20526 D LeakCanary: ​     mApplication instance of com.example.newsbulletin.NewsBulletinApplication
+10-14 22:25:02.238 20149 20526 D LeakCanary: ​     mBase instance of android.app.ContextImpl
+10-14 22:25:02.238 20149 20526 D LeakCanary: ====================================
+10-14 22:25:02.238 20149 20526 D LeakCanary: 0 LIBRARY LEAKS
+10-14 22:25:02.238 20149 20526 D LeakCanary:
+10-14 22:25:02.238 20149 20526 D LeakCanary: A Library Leak is a leak caused by a known bug in 3rd party code that you do not have control over.
+10-14 22:25:02.238 20149 20526 D LeakCanary: See https://square.github.io/leakcanary/fundamentals-how-leakcanary-works/#4-categorizing-leaks
+10-14 22:25:02.238 20149 20526 D LeakCanary: ====================================
+10-14 22:25:02.238 20149 20526 D LeakCanary: 0 UNREACHABLE OBJECTS
+10-14 22:25:02.238 20149 20526 D LeakCanary:
+10-14 22:25:02.238 20149 20526 D LeakCanary: An unreachable object is still in memory but LeakCanary could not find a strong reference path
+10-14 22:25:02.238 20149 20526 D LeakCanary: from GC roots.
+10-14 22:25:02.238 20149 20526 D LeakCanary: ====================================
+10-14 22:25:02.238 20149 20526 D LeakCanary: METADATA
+10-14 22:25:02.238 20149 20526 D LeakCanary:
+10-14 22:25:02.238 20149 20526 D LeakCanary: Please include this in bug reports and Stack Overflow questions.
+10-14 22:25:02.238 20149 20526 D LeakCanary:
+10-14 22:25:02.238 20149 20526 D LeakCanary: Build.VERSION.SDK_INT: 36
+10-14 22:25:02.238 20149 20526 D LeakCanary: Build.MANUFACTURER: Google
+10-14 22:25:02.238 20149 20526 D LeakCanary: LeakCanary version: 2.14
+10-14 22:25:02.238 20149 20526 D LeakCanary: App process name: com.example.newsbulletin
+10-14 22:25:02.238 20149 20526 D LeakCanary: Class count: 31980
+10-14 22:25:02.238 20149 20526 D LeakCanary: Instance count: 231108
+10-14 22:25:02.238 20149 20526 D LeakCanary: Primitive array count: 171030
+10-14 22:25:02.238 20149 20526 D LeakCanary: Object array count: 33866
+10-14 22:25:02.238 20149 20526 D LeakCanary: Thread count: 19
+10-14 22:25:02.238 20149 20526 D LeakCanary: Heap total bytes: 29098947
+10-14 22:25:02.238 20149 20526 D LeakCanary: Bitmap count: 4
+10-14 22:25:02.238 20149 20526 D LeakCanary: Bitmap total bytes: 481216
+10-14 22:25:02.238 20149 20526 D LeakCanary: Large bitmap count: 0
+10-14 22:25:02.238 20149 20526 D LeakCanary: Large bitmap total bytes: 0
+10-14 22:25:02.238 20149 20526 D LeakCanary: Stats: LruCache[maxSize=3000,hits=120341,misses=215205,hitRate=35%]
+10-14 22:25:02.238 20149 20526 D LeakCanary: RandomAccess[bytes=10579176,reads=215205,travel=77108761039,range=36499198,size=45748318]
+10-14 22:25:02.238 20149 20526 D LeakCanary: Heap dump reason: 6 retained objects, app is visible
+10-14 22:25:02.238 20149 20526 D LeakCanary: Analysis duration: 12079 ms
+10-14 22:25:02.238 20149 20526 D LeakCanary: Heap dump file path: /storage/emulated/0/Download/leakcanary-com.example.newsbulletin/2026-10-14_22-24-45_613.hprof
+10-14 22:25:02.238 20149 20526 D LeakCanary: Heap dump timestamp: 1792016702176
+10-14 22:25:02.238 20149 20526 D LeakCanary: Heap dump duration: 2509 ms
+10-14 22:25:02.238 20149 20526 D LeakCanary: ====================================
