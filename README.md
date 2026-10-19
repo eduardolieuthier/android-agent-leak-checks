@@ -96,7 +96,11 @@ The baseline's nonzero Gradle exit is expected **only** when its fresh JUnit XML
 
 The [automatic post-fix assessment](evidence/20261014-1934-validation-01/19-postfix-assessment.md) is inconclusive on its own. The later instrumented assertion is a separate validation method. Rounds 2 and 3 repeated the outcome, but emulator state, caches, and runtime grants were not fully controlled. No speed or token savings are inferred. Android Studio Profiler and Gemini's Fix with Agent were outside this experiment; CI has not been implemented.
 
-See [publication sanitization notes](PUBLICATION_NOTES.md) for the selection, historical commit mapping, and limits of the publication copy. This repository does not include a license pending the author's choice.
+See [publication sanitization notes](PUBLICATION_NOTES.md) for the selection, historical commit mapping, and limits of the publication copy. 
+
+## License
+
+This project's original code and documentation are available under the [MIT License](LICENSE). Third-party components remain subject to their respective licenses and notices.
 
 ## Official references
 
