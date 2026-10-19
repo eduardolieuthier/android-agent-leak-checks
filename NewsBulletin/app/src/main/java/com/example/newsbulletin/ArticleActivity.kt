@@ -40,10 +40,11 @@ class ArticleActivity : Activity() {
     }
 
     override fun onDestroy() {
-        if (articleUpdateListener != null) {
-            // DEMO ONLY: Keep the listener in the application registry after this Activity is destroyed.
-            Log.d("LeakStudy", "screen=ArticleActivity event=listenerIntentionallyRetained listenerCount=${updateRegistry.listenerCount()}")
+        articleUpdateListener?.let { listener ->
+            updateRegistry.unregister(listener)
+            Log.d("LeakStudy", "screen=ArticleActivity event=listenerUnregistered listenerCount=${updateRegistry.listenerCount()}")
         }
+        articleUpdateListener = null
         Log.d("LeakStudy", "screen=ArticleActivity event=onDestroy listenerCount=${updateRegistry.listenerCount()}")
         super.onDestroy()
     }
