@@ -1,19 +1,20 @@
 # News Bulletin reproduction protocol
 
-Use `Pixel_6a` (`emulator-5554`, AVD API 36.1, device API property 36, 1080×2400) and the debug APK. Keep this emulator, variant, reset method, Journey XML, and article choice unchanged for baseline and corrected runs.
+The recorded environment used a Pixel_6a AVD identified as android-36.1; the device reported SDK_INT 36. Emulator serials and SDK paths may differ on another machine. For comparable baseline and corrected agent-driven Journey runs, use the same emulator, debug variant, reset method, [Journey XML](leak_reproduction.xml), and first article. The separate instrumented test is run by [reproduce-memory-checks.ps1](../../scripts/reproduce-memory-checks.ps1).
 
-On a fresh install, Android may show a one-time notification permission prompt from LeakCanary. Grant it before the measured run and record the intervention. Confirm that no system dialog covers Home before starting the Journey. This setup action is outside the XML actions and must be identical for baseline and corrected runs.
+For the **agent-driven Journey**, Android may show a one-time notification permission prompt from LeakCanary on a fresh install. Grant it before the measured Journey, record the intervention, and confirm that no system dialog covers Home. This setup action is outside the XML actions. Runtime permission grants during historical instrumented runs were not independently captured; do not describe their starting conditions as fully identical.
 
-From the repository root, run these commands in order before each measured run:
+**PowerShell commands in a terminal** from the repository root before each measured agent-driven Journey (set `ANDROID_HOME` to your SDK and adjust the serial for your machine):
 
 ```powershell
-$adbExe = Join-Path $env:LOCALAPPDATA 'Android\Sdk\platform-tools\adb.exe'
+$adbExe = Join-Path $env:ANDROID_HOME 'platform-tools\adb.exe'
 & $adbExe -s emulator-5554 shell am force-stop com.example.newsbulletin
 & $adbExe -s emulator-5554 logcat -c
 Set-Location NewsBulletin
+.\gradlew.bat :app:assembleDebug --console=plain
 android run --apks=app/build/outputs/apk/debug/app-debug.apk --activity=HomeActivity --device=emulator-5554
 ```
 
-Follow [leak_reproduction.xml](leak_reproduction.xml) one action at a time. For each of its three passages, open **Community garden opens**, tap **Follow updates**, press Back, and verify that all three article titles are visible on Home. After passage three, open About and return to Home. Use `android layout --device=emulator-5554 --pretty` to inspect each state and `adb shell input` to tap the center coordinates returned by the current layout. Capture screenshots of the Article screen, the status after Follow updates, and the returned Home screen for every passage.
+Follow the [Journey XML](leak_reproduction.xml) one action at a time. For each of its three passages, open **Community garden opens**, tap **Follow updates**, press Back, and verify that all three article titles are visible on Home. After passage three, open About and return to Home. Use `android layout --device=emulator-5554 --pretty` to inspect each state and `adb shell input` to tap the center coordinates returned by the current layout. Capture screenshots of the Article screen, the status after Follow updates, and the returned Home screen for every passage.
 
-The Journey checks UI behavior only. Collect and interpret the LeakCanary reference chain separately in the diagnostic stage. Save each run's layout, screenshots, Logcat and result report under one `run_id`.
+The Journey checks UI behavior only. Collect and interpret the LeakCanary reference chain separately in the diagnostic stage. Save each run's layout, screenshots, Logcat, and result report under one `run_id`. A missing diagnostic trace is inconclusive, and build, installation, or device failures do not establish a leak. Preserve archived evidence, save new runs separately, and make no application changes during reproduction.
