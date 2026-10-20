@@ -91,9 +91,13 @@ function Invoke-InstrumentedRun([string]$Version, [string]$Directory) {
     $gradleLog = Join-Path $Directory 'gradle-output.txt'
     Push-Location $appRoot
     try {
+        $ErrorActionPreference = 'Continue'
         & (Join-Path $appRoot 'gradlew.bat') $gradleTask '--console=plain' *> $gradleLog
         $gradleExit = $LASTEXITCODE
-    } finally { Pop-Location }
+    } finally {
+        $ErrorActionPreference = 'Stop'
+        Pop-Location
+    }
     $ErrorActionPreference = 'Continue'
     $rawLog = @(& $script:adbExe -s $DeviceSerial logcat -d -v brief -s 'LeakCanary:D' 'LeakStudy:D' 'TestRunner:E' '*:S' 2>&1)
     if ($LASTEXITCODE -ne 0) { throw "${Version}: could not collect Logcat." }
