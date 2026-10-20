@@ -22,7 +22,7 @@ function Invoke-Git([string[]]$Arguments) {
 function Assert-CleanCheckout([string]$AllowedOutput) {
     $status = @(Invoke-Git -Arguments @('status', '--porcelain=v1', '--untracked-files=all'))
     $blocked = @($status | Where-Object {
-        $path = $_.Substring(3).Replace('\', '/')
+        $path = $_.Substring(3).Trim('"').Replace('\', '/')
         -not ($AllowedOutput -and $path.StartsWith($AllowedOutput + '/', [StringComparison]::Ordinal))
     })
     if ($blocked.Count -gt 0) { throw "Checkout has tracked changes or untracked files; preserve them before switching states: $($blocked -join '; ')" }
