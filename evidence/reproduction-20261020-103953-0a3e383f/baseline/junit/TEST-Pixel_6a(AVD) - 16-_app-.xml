@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.newsbulletin.LeakReproductionInstrumentationTest" tests="1" failures="1" errors="0" skipped="0" time="26.972" timestamp="2026-10-20T13:40:30" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_6a(AVD) - 16" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="threeFollowPassagesAndAboutReturnDoNotRetainDestroyedActivities" classname="com.example.newsbulletin.LeakReproductionInstrumentationTest" time="26.276">
+    <failure>leakcanary.NoLeakAssertionFailedError: Application memory leaks were detected:
+====================================
+HEAP ANALYSIS RESULT
+====================================
+1 APPLICATION LEAKS
+
+References underlined with "~~~" are likely causes.
+Learn more at https://squ.re/leaks.
+
+593418 bytes retained by leaking objects
+Displaying only 1 leak trace out of 3 with the same signature
+Signature: 3ca80115daff2e953aeb1e93a830c87f284fcb3a
+┬───
+│ GC Root: System class
+│
+├─ android.provider.FontsContract class
+│    Leaking: NO (NewsBulletinApplication↓ is not leaking and a class is never leaking)
+│    ↓ static FontsContract.sContext
+├─ com.example.newsbulletin.NewsBulletinApplication instance
+│    Leaking: NO (Application is a singleton)
+│    mBase instance of android.app.ContextImpl
+│    ↓ NewsBulletinApplication.updateRegistry
+│                              ~~~~~~~~~~~~~~
+├─ com.example.newsbulletin.UpdateRegistry instance
+│    Leaking: UNKNOWN
+│    Retaining 593.7 kB in 3446 objects
+│    ↓ UpdateRegistry.listeners
+│                     ~~~~~~~~~
+├─ java.util.LinkedHashSet instance
+│    Leaking: UNKNOWN
+│    Retaining 593.7 kB in 3445 objects
+│    ↓ LinkedHashSet[element()]
+│                   ~~~~~~~~~~~
+├─ com.example.newsbulletin.ArticleActivity$onCreate$1$listener$1 instance
+│    Leaking: UNKNOWN
+│    Retaining 197.8 kB in 1146 objects
+│    Anonymous class implementing com.example.newsbulletin.ArticleUpdateListener
+│    this$0 instance of com.example.newsbulletin.ArticleActivity with mDestroyed = true
+│    ↓ ArticleActivity$onCreate$1$listener$1.this$0
+│                                            ~~~~~~
+╰→ com.example.newsbulletin.ArticleActivity instance
+​     Leaking: YES (ObjectWatcher was watching this because com.example.newsbulletin.ArticleActivity received Activity#onDestroy() callback and Activity#mDestroyed is true)
+​     Retaining 197.8 kB in 1145 objects
+​     key = 7adb9911-ad48-478b-9774-14bf7436418e
+​     watchDurationMillis = 8935
+​     retainedDurationMillis = 3934
+​     mApplication instance of com.example.newsbulletin.NewsBulletinApplication
+​     mBase instance of android.app.ContextImpl
+====================================
+0 LIBRARY LEAKS
+
+A Library Leak is a leak caused by a known bug in 3rd party code that you do not have control over.
+See https://square.github.io/leakcanary/fundamentals-how-leakcanary-works/#4-categorizing-leaks
+====================================
+0 UNREACHABLE OBJECTS
+
+An unreachable object is still in memory but LeakCanary could not find a strong reference path
+from GC roots.
+====================================
+METADATA
+
+Please include this in bug reports and Stack Overflow questions.
+
+Build.VERSION.SDK_INT: 36
+Build.MANUFACTURER: Google
+LeakCanary version: 2.14
+App process name: com.example.newsbulletin
+Class count: 33346
+Instance count: 232733
+Primitive array count: 174740
+Object array count: 34407
+Thread count: 23
+Heap total bytes: 29744971
+Bitmap count: 5
+Bitmap total bytes: 601520
+Large bitmap count: 0
+Large bitmap total bytes: 0
+Stats: LruCache[maxSize=3000,hits=120505,misses=216441,hitRate=35%] RandomAccess[bytes=10627937,reads=216441,travel=80301783034,range=37291682,size=46658594]
+assertionTag:
+waitForRetainedDurationMillis: 5117
+totalDurationMillis: 19456
+Analysis duration: 9099 ms
+Heap dump file path: /data/user/0/com.example.newsbulletin/files/instrumentation_tests_2026-10-20_13-40-13_619.hprof
+Heap dump timestamp: 1792503627949
+Heap dump duration: 1820 ms
+====================================
+at leakcanary.NoLeakAssertionFailedError$Companion$throwOnApplicationLeaks$1.reportHeapAnalysis(NoLeakAssertionFailedError.kt:25)
+at leakcanary.AndroidDetectLeaksAssert.runLeakChecks(AndroidDetectLeaksAssert.kt:95)
+at leakcanary.AndroidDetectLeaksAssert.assertNoLeaks(AndroidDetectLeaksAssert.kt:34)
+at leakcanary.LeakAssertions.assertNoLeaks(LeakAssertions.kt:21)
+at leakcanary.LeakAssertions.assertNoLeaks$default(LeakAssertions.kt:20)
+at com.example.newsbulletin.LeakReproductionInstrumentationTest.threeFollowPassagesAndAboutReturnDoNotRetainDestroyedActivities(LeakReproductionInstrumentationTest.kt:62)
+</failure>
+  </testcase>
+</testsuite>

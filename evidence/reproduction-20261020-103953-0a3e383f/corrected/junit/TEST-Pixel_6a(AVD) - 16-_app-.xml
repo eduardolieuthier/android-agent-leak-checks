@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.example.newsbulletin.LeakReproductionInstrumentationTest" tests="1" failures="0" errors="0" skipped="0" time="8.039" timestamp="2026-10-20T13:40:48" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_6a(AVD) - 16" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="threeFollowPassagesAndAboutReturnDoNotRetainDestroyedActivities" classname="com.example.newsbulletin.LeakReproductionInstrumentationTest" time="7.272" />
+</testsuite>

@@ -1,0 +1,8 @@
+﻿{
+    "Version":  "corrected",
+    "SourceCommit":  "15ea681b7ea279dacc022229c009c8b54cbfaa1f",
+    "GradleExit":  0,
+    "TestCases":  1,
+    "FailedOrSkippedCases":  0,
+    "Result":  "test passed; explicit LeakCanary assertion outcome captured"
+}

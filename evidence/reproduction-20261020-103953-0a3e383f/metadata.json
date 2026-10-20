@@ -1,0 +1,31 @@
+﻿{
+    "StartedUtc":  "2026-10-20T13:39:53.2219938Z",
+    "DeviceSerial":  "emulator-5554",
+    "TestClass":  "com.example.newsbulletin.LeakReproductionInstrumentationTest",
+    "TestName":  "threeFollowPassagesAndAboutReturnDoNotRetainDestroyedActivities",
+    "Command":  ".\\\\gradlew.bat :app:connectedDebugAndroidTest --console=plain",
+    "InitialBranch":  "main",
+    "InitialCommit":  "15ea681b7ea279dacc022229c009c8b54cbfaa1f",
+    "BaselineCommit":  "422fb46fa27c7d6d88ecf10cea0d78d64cc60359",
+    "CorrectedCommit":  "15ea681b7ea279dacc022229c009c8b54cbfaa1f",
+    "Runs":  [
+                 {
+                     "Version":  "baseline",
+                     "SourceCommit":  "422fb46fa27c7d6d88ecf10cea0d78d64cc60359",
+                     "GradleExit":  1,
+                     "TestCases":  1,
+                     "FailedOrSkippedCases":  1,
+                     "Result":  "expected LeakCanary assertion failure with retained destroyed ArticleActivity"
+                 },
+                 {
+                     "Version":  "corrected",
+                     "SourceCommit":  "15ea681b7ea279dacc022229c009c8b54cbfaa1f",
+                     "GradleExit":  0,
+                     "TestCases":  1,
+                     "FailedOrSkippedCases":  0,
+                     "Result":  "test passed; explicit LeakCanary assertion outcome captured"
+                 }
+             ],
+    "Status":  "validated",
+    "FinishedUtc":  "2026-10-20T13:40:49.2869130Z"
+}

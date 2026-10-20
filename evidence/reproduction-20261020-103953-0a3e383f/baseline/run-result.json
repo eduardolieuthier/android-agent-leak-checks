@@ -1,0 +1,8 @@
+﻿{
+    "Version":  "baseline",
+    "SourceCommit":  "422fb46fa27c7d6d88ecf10cea0d78d64cc60359",
+    "GradleExit":  1,
+    "TestCases":  1,
+    "FailedOrSkippedCases":  1,
+    "Result":  "expected LeakCanary assertion failure with retained destroyed ArticleActivity"
+}

@@ -1,0 +1,33 @@
+﻿D/LeakStudy(16920): screen=HomeActivity event=onCreate
+D/LeakStudy(16920): screen=HomeActivity event=onResume
+D/LeakStudy(16920): screen=HomeActivity event=openArticle articleIndex=0
+D/LeakStudy(16920): screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=0
+D/LeakStudy(16920): screen=ArticleActivity event=followClick articleIndex=0
+D/LeakStudy(16920): screen=ArticleActivity event=listenerRegistered listenerCount=1
+D/LeakStudy(16920): screen=ArticleActivity event=updateDelivered articleIndex=0
+D/LeakStudy(16920): screen=HomeActivity event=onResume
+D/LeakStudy(16920): screen=ArticleActivity event=listenerUnregistered listenerCount=0
+D/LeakStudy(16920): screen=ArticleActivity event=onDestroy listenerCount=0
+D/LeakStudy(16920): screen=HomeActivity event=openArticle articleIndex=0
+D/LeakStudy(16920): screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=0
+D/LeakStudy(16920): screen=ArticleActivity event=followClick articleIndex=0
+D/LeakStudy(16920): screen=ArticleActivity event=listenerRegistered listenerCount=1
+D/LeakStudy(16920): screen=ArticleActivity event=updateDelivered articleIndex=0
+D/LeakStudy(16920): screen=HomeActivity event=onResume
+D/LeakStudy(16920): screen=ArticleActivity event=listenerUnregistered listenerCount=0
+D/LeakStudy(16920): screen=ArticleActivity event=onDestroy listenerCount=0
+D/LeakStudy(16920): screen=HomeActivity event=openArticle articleIndex=0
+D/LeakStudy(16920): screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=0
+D/LeakStudy(16920): screen=ArticleActivity event=followClick articleIndex=0
+D/LeakStudy(16920): screen=ArticleActivity event=listenerRegistered listenerCount=1
+D/LeakStudy(16920): screen=ArticleActivity event=updateDelivered articleIndex=0
+D/LeakStudy(16920): screen=HomeActivity event=onResume
+D/LeakStudy(16920): screen=ArticleActivity event=listenerUnregistered listenerCount=0
+D/LeakStudy(16920): screen=ArticleActivity event=onDestroy listenerCount=0
+D/LeakStudy(16920): screen=HomeActivity event=openAbout
+D/LeakStudy(16920): screen=AboutActivity event=onCreate
+D/LeakStudy(16920): screen=HomeActivity event=onResume
+D/LeakStudy(16920): screen=AboutActivity event=onDestroy
+D/LeakCanary(16920): Test can keep going: no heap dump performed (No watched objects after triggering an explicit GC.)
+D/LeakCanary(16920): Spent 119 ms detecting leaks on , VM total so far: 119 ms
+D/LeakStudy(16920): screen=HomeActivity event=onDestroy

@@ -1,0 +1,37 @@
+﻿D/LeakStudy(16596): screen=HomeActivity event=onCreate
+D/LeakStudy(16596): screen=HomeActivity event=onResume
+D/LeakStudy(16596): screen=HomeActivity event=openArticle articleIndex=0
+D/LeakStudy(16596): screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=0
+D/LeakStudy(16596): screen=ArticleActivity event=followClick articleIndex=0
+D/LeakStudy(16596): screen=ArticleActivity event=listenerRegistered listenerCount=1
+D/LeakStudy(16596): screen=ArticleActivity event=updateDelivered articleIndex=0
+D/LeakStudy(16596): screen=HomeActivity event=onResume
+D/LeakStudy(16596): screen=ArticleActivity event=listenerIntentionallyRetained listenerCount=1
+D/LeakStudy(16596): screen=ArticleActivity event=onDestroy listenerCount=1
+D/LeakStudy(16596): screen=HomeActivity event=openArticle articleIndex=0
+D/LeakStudy(16596): screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=1
+D/LeakStudy(16596): screen=ArticleActivity event=followClick articleIndex=0
+D/LeakStudy(16596): screen=ArticleActivity event=listenerRegistered listenerCount=2
+D/LeakStudy(16596): screen=ArticleActivity event=updateDelivered articleIndex=0
+D/LeakStudy(16596): screen=ArticleActivity event=updateDelivered articleIndex=0
+D/LeakStudy(16596): screen=HomeActivity event=onResume
+D/LeakStudy(16596): screen=ArticleActivity event=listenerIntentionallyRetained listenerCount=2
+D/LeakStudy(16596): screen=ArticleActivity event=onDestroy listenerCount=2
+D/LeakStudy(16596): screen=HomeActivity event=openArticle articleIndex=0
+D/LeakStudy(16596): screen=ArticleActivity event=onCreate articleIndex=0 listenerCount=2
+D/LeakStudy(16596): screen=ArticleActivity event=followClick articleIndex=0
+D/LeakStudy(16596): screen=ArticleActivity event=listenerRegistered listenerCount=3
+D/LeakStudy(16596): screen=ArticleActivity event=updateDelivered articleIndex=0
+D/LeakStudy(16596): screen=ArticleActivity event=updateDelivered articleIndex=0
+D/LeakStudy(16596): screen=ArticleActivity event=updateDelivered articleIndex=0
+D/LeakStudy(16596): screen=HomeActivity event=onResume
+D/LeakStudy(16596): screen=ArticleActivity event=listenerIntentionallyRetained listenerCount=3
+D/LeakStudy(16596): screen=ArticleActivity event=onDestroy listenerCount=3
+D/LeakStudy(16596): screen=HomeActivity event=openAbout
+D/LeakStudy(16596): screen=AboutActivity event=onCreate
+D/LeakStudy(16596): screen=HomeActivity event=onResume
+D/LeakStudy(16596): screen=AboutActivity event=onDestroy
+D/LeakCanary(16596): Spent 19463 ms detecting leaks on , VM total so far: 19463 ms
+D/LeakStudy(16596): screen=HomeActivity event=onDestroy
+E/TestRunner(16596): leakcanary.NoLeakAssertionFailedError: Application memory leaks were detected:
+E/TestRunner(16596): 	at leakcanary.NoLeakAssertionFailedError$Companion$throwOnApplicationLeaks$1.reportHeapAnalysis(NoLeakAssertionFailedError.kt:25)
